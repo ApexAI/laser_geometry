@@ -197,7 +197,7 @@ TEST(laser_geometry, projectLaser2) {
       uint32_t index_offset = 0;
       uint32_t distance_offset = 0;
       uint32_t stamps_offset = 0;
-      for (std::vector<sensor_msgs::msg::PointField>::iterator f = cloud_out.fields.begin();
+      for (auto f = cloud_out.fields.begin();
         f != cloud_out.fields.end(); f++)
       {
         if (f->name == "x") {x_offset = f->offset;}
